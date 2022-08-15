@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet"
+    />
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://cdn.glitch.global/ff2b86fd-0d2c-4090-b812-97c19c9ef639/background%20copy.png?v=1658173777281');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 35px;
+      font-family: "Raleway", sans-serif;
+      color: #655645;
+    }
+    img {
+      border-radius: 50%;
+      max-height: 400px;
+      margin-bottom: 2em;
+      border: 7px solid #ECD8C0;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.3);
+      font-family: "Raleway", sans-serif;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-family: "Raleway", sans-serif;
+    }
+    p {
+      font-family: "Raleway", sans-serif;
+    }
+    button {
+      font-family: "Raleway", sans-serif;
+      border: white;
+      background-color: #ECD8C0;
+      color: #655645
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+      <h1>Tanjila's Blog</h1>
+    <img src="https://cdn.glitch.global/ff2b86fd-0d2c-4090-b812-97c19c9ef639/IMG_8257.jpg?v=1658167756259">
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Photo Gallery</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Travel</h2>
+    <p>I love traveling! I have only been to Sweden, Denmark, and Bangladesh so far, but I am hoping to visit other countries in the near future. I have also been to multiple states such as Illinois, Indiana, California, etc. Here are some pictures:</p>
+    <button>Like</button>
+  </article>
+  <div class="photos">
+  <img src="https://cdn.glitch.global/ff2b86fd-0d2c-4090-b812-97c19c9ef639/IMG_3327%20.png?v=1658182427043">
+  <img src="https://cdn.glitch.global/ff2b86fd-0d2c-4090-b812-97c19c9ef639/IMG_3162.png?v=1658182579586">
+  <img src="https://cdn.glitch.global/ff2b86fd-0d2c-4090-b812-97c19c9ef639/IMG_3652%20.png?v=1658182647136">
+  </div>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
